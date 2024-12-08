@@ -3,7 +3,7 @@
   "sql-file" : true,
   "pg": {
     "host": {"ENV": "DB_HOST"},
-    "port": 5433,
+    "port": 5432,
     "user": {"ENV": "DB_USERNAME"},
     "password" : {"ENV": "DB_PASSWORD"},
     "database": {"ENV": "DB_DATABASE"},
