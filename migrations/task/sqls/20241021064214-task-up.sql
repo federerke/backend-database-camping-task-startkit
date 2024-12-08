@@ -23,7 +23,6 @@ VALUES
 ('Q太郎','starplatinum@hexschooltest.io','USER'),
 ('透明人','opcatiy0@hexschooltest.io','USER');
 -- 1-2 修改：用 Email 找到 李燕容、肌肉棒子、Q太郎，如果他的 Role 為 USER 將他的 Role 改為 COACH
-SELECT * FROM "USER"
 UPDATE "USER" 
 SET role='COACH' 
 WHERE email in(SELECT email FROM "USER" WHERE role='USER' AND name in('李燕容','肌肉棒子','Q太郎'));
